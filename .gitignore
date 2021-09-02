@@ -4,7 +4,8 @@ out/
 /src
 .idea
 idea_modules/
-Playground/
 *.ipr
 *.iws
 target/
+.gradle
+/build/
