@@ -11,7 +11,9 @@ A web service that receive exchange rates and returns the random GIF-picture, ba
 ```bash
 git clone https://github.com/rareart/RatesToGIF
 ```
-При желании, вы можете сами пересобрать приложение из исходных файлов, для этого в поставке проекта присутствует gradle-wrapper. Для этого выполните:
+При желании, вы можете сами пересобрать приложение из исходных файлов, для этого в поставке проекта присутствует gradle-wrapper. 
+
+Для этого выполните:
 
 ```bash
 сd RatesToGIF
