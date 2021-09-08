@@ -1,0 +1,38 @@
+plugins {
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+    id 'application'
+    id 'java'
+}
+
+group = 'com.rareart'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    set('springCloudVersion', setSpringCloudVersion)
+}
+
+dependencies {
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: starterWebVersion
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: openFeignVersion
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: starterWebTestVersion
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}
+
+application {
+    mainClass = 'com.rareart.ratestogif.RatesToGifApplication'
+}
+
+test {
+    useJUnitPlatform()
+}

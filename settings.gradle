@@ -1,0 +1,10 @@
+pluginManagement {
+    plugins {
+        id 'org.springframework.boot' version "${springBootVersion}"
+    }
+    plugins {
+        id 'io.spring.dependency-management' version "${dManagementVersion}"
+    }
+}
+
+rootProject.name = 'RatesToGIF'
